@@ -1,0 +1,95 @@
+.outer-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  background-color: rgb(63, 58, 58);
+  color: rgba(255, 255, 255, 0.92);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+input,button{
+  width: 15rem;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+button{
+  width: 16.4rem;
+}
+.p1,.p2{
+  font-size: 25px;
+}
+.outer-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 40rem;
+  height: 40rem;
+  margin: 0 auto;
+  background-color: rgba(20, 20, 20, 0.491);
+  box-shadow: 0 0 40px gray;
+  padding: 20px;
+}
+
+.result{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#low-or-high{
+  text-align: center;
+}
+#prev-guess{
+  position: relative;
+  top: 20px;
+  background-color: gray;
+}
+#btn-ele{
+  background-color: rgba(0, 128, 0, 0.747);
+  color: white;
+}
+button{
+  cursor: pointer;
+}
+
+/* responsive */
+
+@media(max-width: 600px) {
+  .outer-box {
+    width: 90%; /* Adjust the width for small screens */
+    height: auto; /* Allow the height to adjust dynamically */
+    padding: 15px;
+  }
+
+  input, button {
+    width: 100%; /* Make buttons and inputs full width */
+    font-size: 18px; /* Adjust font size */
+  }
+
+  button {
+    width: 110%;
+  }
+
+  .p1, .p2 {
+    font-size: 20px; /* Smaller font for text */
+  }
+
+  marquee {
+    font-size: 18px;
+  }
+
+  #prev-guess {
+    font-size: 16px; /* Adjust font size for readability */
+    padding: 10px;
+  }
+  p{
+    text-align: center;
+  }
+}
